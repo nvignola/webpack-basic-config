@@ -1,0 +1,30 @@
+{
+  "name": "webpack-basic-config",
+  "version": "1.0.0",
+  "description": "Webpack basic config with es6",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel --presets env index.js -o build/index.bundle.js",
+    "start": "webpack-dev-server",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvignola/webpack-basic-config.git"
+  },
+  "author": "Nico Vignola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nvignola/webpack-basic-config/issues"
+  },
+  "homepage": "https://github.com/nvignola/webpack-basic-config#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "jshint": "^2.9.5",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
