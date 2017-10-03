@@ -1,5 +1,6 @@
  var path = require('path');
  var webpack = require('webpack');
+ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
  module.exports = {
      entry: './index.js',
@@ -11,6 +12,7 @@
          loaders: [
              {
                  test: /\.js$/,
+                 exclude: /node_modules/,
                  loader: 'babel-loader',
                  query: {
                      presets: ['env']
@@ -21,5 +23,6 @@
      stats: {
          colors: true
      },
-     devtool: 'source-map'
+     devtool: 'source-map',
+     plugins: [new(HtmlWebpackPlugin)]
  };
